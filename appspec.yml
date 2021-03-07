@@ -3,3 +3,15 @@ os: linux
 files:
   - source: Dockerfile
     destination: /tmp/
+hooks:
+  ApplicationStop:
+    - location: deploy/application-stop.sh
+      timeout: 5
+  BeforeInstall:
+    - location: deploy/before-install.sh
+      timeout: 10
+  AfterInstall:
+    - location: deploy/after-install.sh
+      timeout: 10
+    - location: deploy/application-start.sh
+      timeout: 7
