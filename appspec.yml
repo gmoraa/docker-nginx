@@ -3,6 +3,8 @@ os: linux
 files:
   - source: Dockerfile
     destination: /tmp
+  - source: index.html
+    destination: /tmp
 hooks:
   ApplicationStop:
     - location: deploy/application-stop.sh

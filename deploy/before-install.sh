@@ -1,3 +1,5 @@
 #!/bin/bash
 
-echo "test before-install"
+echo "Requirements."
+cd /tmp
+docker build -t docker-nginx:latest .

@@ -1,3 +1,5 @@
 #!/bin/bash
 
-echo "test application-stop"
+echo "Stop Docker container."
+docker kill backend
+docker rm backend
