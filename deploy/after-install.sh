@@ -1,3 +1,5 @@
 #!/bin/bash
 
-echo "test after-install"
+echo "Clean up."
+rm /tmp/Dockerfile
+rm /tmp/index.html
