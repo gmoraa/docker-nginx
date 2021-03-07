@@ -1,6 +1,8 @@
 version: 0.0
-
 os: linux
+files:
+  - source: Dockerfile
+    destination: /tmp
 hooks:
   ApplicationStop:
     - location: deploy/application-stop.sh
