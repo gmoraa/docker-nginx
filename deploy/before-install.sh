@@ -1,4 +1,5 @@
 #!/bin/bash
 
 echo "Requirements."
-#cd /tmp && docker build -t docker-nginx:latest .
+rm /tmp/Dockerfile
+rm /tmp/index.html
