@@ -1,5 +1,5 @@
 #!/bin/bash
-set +e
+
 echo "Stop Docker container."
-sudo docker kill backend || true
-sudo docker rm backend || true
+sudo docker kill backend
+sudo docker rm backend
