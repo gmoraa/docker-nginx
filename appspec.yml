@@ -2,9 +2,9 @@ version: 0.0
 os: linux
 files:
   - source: Dockerfile
-    destination: /tmp
+    destination: /opt/webapp
   - source: index.html
-    destination: /tmp
+    destination: /opt/webapp
 hooks:
   ApplicationStop:
     - location: deploy/application-stop.sh
