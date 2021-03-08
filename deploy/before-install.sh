@@ -1,5 +1,6 @@
 #!/bin/bash
+set +e
 
 echo "Requirements."
-rm /tmp/Dockerfile
-rm /tmp/index.html
+rm /tmp/Dockerfile || true
+rm /tmp/index.html || true
