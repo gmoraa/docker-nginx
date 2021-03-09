@@ -6,10 +6,10 @@ File structure:
 2. **index.html**: NGINX landing page.
 3. **appspec.yml**: CodeDeploy configuration file(AWS).
 4. **buildspec.yml**: CodeBuild configuration file(AWS).
-5. **deploy/**: Bash scripts required for the AWS pipelines.
-  5.1. **application-stop.sh**: Stop Docker container.
-  5.2. **before-install.sh**: Clean up directory.
-  5.3. **after-install.sh**: Docker build.
+5. **deploy/**: Bash scripts required for the AWS pipelines.\
+  5.1. **application-stop.sh**: Stop Docker container.\
+  5.2. **before-install.sh**: Clean up directory.\
+  5.3. **after-install.sh**: Docker build.\
   5.4. **application-start.sh**: Start Docker container.
 6. **terraform/ec2.tf**: Terraform file to create an EC2 instance.
 7. **docker-nginx.drawio**: Draw.io diagram.
